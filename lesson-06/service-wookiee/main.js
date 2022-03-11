@@ -46,3 +46,6 @@ for (const fileType of ["text/css", "text/html", "application/json"]) {
   });
   boxes.appendChild(box);
 }
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.json");
+}
